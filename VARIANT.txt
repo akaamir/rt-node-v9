@@ -1,0 +1,2 @@
+B11-sightfocus
+KTUNE=armFirst=200,armYield=70,dodge=1,cubes=30,kiteLo=81,kiteLHi=193,leadFade=0.52,sightW=4,weakW=1.5
