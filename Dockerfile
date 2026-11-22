@@ -7,6 +7,6 @@ RUN go build -trimpath -ldflags="-s -w" -o /out/kestrel .
 FROM scratch
 COPY --from=build /out/kestrel /kestrel
 ENV KTUNE=armFirst=200,armYield=70,dodge=1,cubes=30,kiteLo=81,kiteLHi=193,leadFade=0.52,sightW=4,weakW=1.5
-ENV KNAME=kestrel-B11-sightfocus-r2
+ENV KNAME=kestrel-B11-sightfocus-r3
 USER 65534:65534
 ENTRYPOINT ["/kestrel"]
