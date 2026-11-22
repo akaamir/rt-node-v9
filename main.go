@@ -13,6 +13,8 @@ import (
 	"strconv"
 )
 
+const buildStamp = "b11-force-rerun-20261122T155046Z"
+
 var callsign = func() string {
 	if n := os.Getenv("KNAME"); n != "" {
 		return n
@@ -61,6 +63,7 @@ func kindOf(line []byte) string {
 }
 
 func main() {
+	fmt.Fprintf(os.Stderr, "kestrel build %s\n", buildStamp)
 	debug.SetGCPercent(600)
 	debug.SetMemoryLimit(360 << 20)
 
