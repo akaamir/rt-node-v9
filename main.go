@@ -13,7 +13,7 @@ import (
 	"strconv"
 )
 
-const buildStamp = "b11-force-rerun-20261122T155046Z"
+const buildStamp = "b11-force-rerun-20261122T155501Z"
 
 var callsign = func() string {
 	if n := os.Getenv("KNAME"); n != "" {
